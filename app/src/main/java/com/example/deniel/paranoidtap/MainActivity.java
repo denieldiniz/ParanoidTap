@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //int temp = 10;
     TextView refTaps;
-    int taps = 0;
+    int taps = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
