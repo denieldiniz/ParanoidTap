@@ -26,20 +26,7 @@ public class PlayFragment extends android.support.v4.app.Fragment implements Vie
         //Contagem regressiva para chamar o fragment resultado
         Handler countdown = new Handler();
         countdown.postDelayed(this, time);
-
-
-
-        /*while (time > 0) {
-
-            Handler countdown = new Handler();
-            countdown.postDelayed(this, time);
-
-            countdown.
-            //Mostra na tela a contagem regressiva
-            for (Integer aux = 10; (time / 1000) == aux; aux--) {
-                pTime.setText(aux.toString());
-            }
-        }*/
+        //countdown.
 
 
         //interação com interface do jogo.
@@ -55,6 +42,7 @@ public class PlayFragment extends android.support.v4.app.Fragment implements Vie
     public void onClick(View v) {
         taps = taps + 1;
         pTaps.setText(taps.toString());
+
     }
 
     @Override
