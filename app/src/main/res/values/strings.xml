@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Paranoid Tap</string>
     <string name="taps">TAPS</string>
-    <string name="temp">TEMP</string>
-    <string name="ozzy">Ozzy</string>
+    <string name="ozzy">OZZY</string>
+    <string name="time">TIME</string>
 </resources>

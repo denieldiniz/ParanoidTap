@@ -8,26 +8,27 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //int temp = 10;
-    TextView refTaps;
-    int taps = 0;
+    ImageView pBack;
+    TextView pTaps;
+    TextView pTime;
+    Integer taps = 0;
+    Integer time = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int cont = 10;
-        //TextView refTemp = (TextView) findViewById(R.id.temp);
-        refTaps = (TextView) findViewById(R.id.taps);
-        ImageView tela = (ImageView) findViewById(R.id.fundo);
-        tela.setOnClickListener(this);
+        pBack = (ImageView) findViewById(R.id.back);
+        pTaps = (TextView) findViewById(R.id.taps);
+        pTime = (TextView) findViewById(R.id.time);
+
+        pBack.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         taps = taps + 1;
-        refTaps.setText(taps);
-
+        pTaps.setText(taps.toString());
     }
 }
