@@ -14,7 +14,8 @@ public class PlayFragment extends android.support.v4.app.Fragment implements Vie
     TextView pTaps;
     TextView pTime;
     Integer taps = 0;
-    Integer time = 10;
+    Integer time = 10000;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -22,9 +23,24 @@ public class PlayFragment extends android.support.v4.app.Fragment implements Vie
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_play, container, false);
 
-        //Contagem regressiva para chamar o resultado
-        Handler handler = new Handler();
-        handler.postDelayed(this, 10000);
+        //Contagem regressiva para chamar o fragment resultado
+        Handler countdown = new Handler();
+        countdown.postDelayed(this, time);
+
+
+
+        /*while (time > 0) {
+
+            Handler countdown = new Handler();
+            countdown.postDelayed(this, time);
+
+            countdown.
+            //Mostra na tela a contagem regressiva
+            for (Integer aux = 10; (time / 1000) == aux; aux--) {
+                pTime.setText(aux.toString());
+            }
+        }*/
+
 
         //interação com interface do jogo.
         pBack = (ImageView) view.findViewById(R.id.back);
