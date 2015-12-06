@@ -3,4 +3,7 @@
     <string name="taps">TAPS</string>
     <string name="ozzy">OZZY</string>
     <string name="time">TIME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
