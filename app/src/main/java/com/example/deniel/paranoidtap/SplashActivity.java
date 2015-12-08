@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Chronometer;
 
 public class SplashActivity extends AppCompatActivity implements Runnable {
 
@@ -13,6 +14,8 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
         setContentView(R.layout.activity_splash);
         Handler handler = new Handler();
         handler.postDelayed(this, 3000);
+        Chronometer cont = new Chronometer(this);
+        cont.
     }
 
     @Override
